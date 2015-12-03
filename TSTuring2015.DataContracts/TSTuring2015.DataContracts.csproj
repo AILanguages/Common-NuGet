@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C3A5839-0A2A-44B8-BF00-480CD67E0186}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TSTuring2015.DataContracts</RootNamespace>
+    <AssemblyName>TSTuring2015.DataContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr3.Runtime.PCL.3.5.0.3\lib\portable-win+net40+sl40+wp\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangeScreenRequest.cs" />
+    <Compile Include="ChangeScreenResponse.cs" />
+    <Compile Include="ChangeSampleSettingsRequest.cs" />
+    <Compile Include="ChangeSampleSettingsResponse.cs" />
+    <Compile Include="CommandRequest.cs" />
+    <Compile Include="CommandResponse.cs" />
+    <Compile Include="Commands.cs" />
+    <Compile Include="ChooseSampleFileRequest.cs" />
+    <Compile Include="ChooseSampleFileResponse.cs" />
+    <Compile Include="ChangeSettingsRequest.cs" />
+    <Compile Include="ChangeSettingsResponse.cs" />
+    <Compile Include="ConverseResponse.cs" />
+    <Compile Include="GetSampleSettingsRequest.cs" />
+    <Compile Include="GetSampleSettingsResponse.cs" />
+    <Compile Include="GetTranslationResponse.cs" />
+    <Compile Include="GetTranslationRequest.cs" />
+    <Compile Include="TranslationPair.cs" />
+    <Compile Include="GetSettingsResponse.cs" />
+    <Compile Include="GetSettingsRequest.cs" />
+    <Compile Include="GetIDRequest.cs" />
+    <Compile Include="GetIDResponse.cs" />
+    <Compile Include="GetTextRequest.cs" />
+    <Compile Include="GetTextResponse.cs" />
+    <Compile Include="SampleMatchRequest.cs" />
+    <Compile Include="SampleMatchResponse.cs" />
+    <Compile Include="GetScreenResponse.cs" />
+    <Compile Include="GetScreenRequest.cs" />
+    <Compile Include="NewMatchResponse.cs" />
+    <Compile Include="NewMatchRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Response.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TSTuring2015.ScreenModels\TSTuring2015.ScreenModels.csproj">
+      <Project>{0CFF491E-D539-4464-A5AC-6E4D0F4A6232}</Project>
+      <Name>TSTuring2015.ScreenModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
